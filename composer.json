@@ -48,5 +48,6 @@
                 "Docs": "AwemaPL\\Docs\\Facades\\Docs"
             }
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
