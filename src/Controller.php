@@ -8,7 +8,7 @@ use Symfony\Component\Yaml\Yaml;
 use League\CommonMark\{
     Converter, DocParser, Environment, HtmlRenderer
 };
-use Webuni\CommonMark\TableExtension\TableExtension;
+use League\CommonMark\Ext\Table\TableExtension;
 use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
