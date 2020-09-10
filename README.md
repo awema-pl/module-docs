@@ -1,10 +1,10 @@
 # Docs
 
-[![Coverage report](http://gitlab.awema.pl/awema-pl/docs/badges/master/coverage.svg)](https://www.awema.pl/)
-[![Build status](http://gitlab.awema.pl/awema-pl/docs/badges/master/build.svg)](https://www.awema.pl/)
-[![Composer Ready](https://www.awema.pl/awema-pl/docs/status.svg)](https://www.awema.pl/)
-[![Downloads](https://www.awema.pl/awema-pl/docs/downloads.svg)](https://www.awema.pl/)
-[![Last version](https://www.awema.pl/awema-pl/docs/version.svg)](https://www.awema.pl/)
+[![Coverage report](http://gitlab.awema.pl/awema-pl/module-docs/badges/master/coverage.svg)](https://www.awema.pl/)
+[![Build status](http://gitlab.awema.pl/awema-pl/module-docs/badges/master/build.svg)](https://www.awema.pl/)
+[![Composer Ready](https://www.awema.pl/awema-pl/module-docs/status.svg)](https://www.awema.pl/)
+[![Downloads](https://www.awema.pl/awema-pl/module-docs/downloads.svg)](https://www.awema.pl/)
+[![Last version](https://www.awema.pl/awema-pl/module-docs/version.svg)](https://www.awema.pl/)
 
 
 Awema packages documentation reader
@@ -14,7 +14,7 @@ Awema packages documentation reader
 Via Composer
 
 ``` bash
-$ composer require awema-pl/docs
+$ composer require awema-pl/module-docs
 ```
 
 The package will automatically register itself.
