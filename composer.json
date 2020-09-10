@@ -1,0 +1,52 @@
+{
+    "name": "awema-pl/module-docs",
+    "description": "Package for wiki output",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karol Golec",
+            "email": "karolgolec10@gmail.com",
+            "homepage": "https://github.pl/awema-pl/module-docs",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "karolgolec10@gmail.com"
+    },
+    "homepage": "https://awema.pl",
+    "keywords": [
+        "Laravel",
+        "Docs"
+    ],
+    "require": {
+        "symfony/yaml": "^4.2",
+        "webuni/commonmark-table-extension": "^2.1.0"
+    },
+    "require-dev": {
+        "mikey179/vfsStream": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AwemaPL\\Docs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AwemaPL\\Docs\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AwemaPL\\Docs\\DocsServiceProvider"
+            ],
+            "aliases": {
+                "Docs": "AwemaPL\\Docs\\Facades\\Docs"
+            }
+        }
+    }
+}
