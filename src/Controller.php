@@ -5,10 +5,7 @@ namespace AwemaPL\Docs;
 use Illuminate\Support\Str;
 use AwemaPL\Docs\Facades\Docs;
 use Symfony\Component\Yaml\Yaml;
-use League\CommonMark\{
-    Converter, DocParser, Environment, HtmlRenderer
-};
-use League\CommonMark\Ext\Table\TableExtension;
+use League\CommonMark\{Converter, DocParser, Environment, Extension\Table\TableExtension, HtmlRenderer};
 use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
