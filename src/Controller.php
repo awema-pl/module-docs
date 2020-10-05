@@ -2,6 +2,7 @@
 
 namespace AwemaPL\Docs;
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use AwemaPL\Docs\Facades\Docs;
 use Symfony\Component\Yaml\Yaml;
@@ -69,9 +70,9 @@ class Controller extends BaseController
         }
 
         $current_file = str_replace(Docs::path(), '/docs/', $filepath);
-        $navs = $this->getNavs();
+        $sidebar = $this->getNavs();
 
-        return view(config('docs.static_view', 'docs::document'), compact('content', 'navs', 'h1', 'current_file'));
+        return view(config('docs.static_view', 'docs::document'), compact('content', 'sidebar', 'h1', 'current_file'));
     }
 
     /**
@@ -113,9 +114,9 @@ class Controller extends BaseController
                 'version' => $path[1]
             ];
             $current_file = "/docs/components/{$package['name']}/{$path[1]}/index.md";
-            $navs = $this->getNavs();
+            $sidebar = $this->getNavs();
 
-            $data = compact('content', 'navs', 'h1', 'package', 'versions', 'current_file');
+            $data = compact('content', 'sidebar', 'h1', 'package', 'versions', 'current_file');
 
             Docs::setCache($data, $path);
         }
@@ -151,9 +152,9 @@ class Controller extends BaseController
                 'version' => $path[1]
             ];
             $current_file = "/docs/components/{$package['name']}/{$path[1]}/{$path[2]}";
-            $navs = $this->getNavs();
+            $sidebar = $this->getNavs();
 
-            $data = compact('content', 'navs', 'h1', 'package', 'versions', 'current_file');
+            $data = compact('content', 'sidebar', 'h1', 'package', 'versions', 'current_file');
             Docs::setCache($data, $path);
         }
 

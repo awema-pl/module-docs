@@ -23,6 +23,7 @@ class DocsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/docs.php' => config_path('docs.php'),
         ], 'config');
+
     }
 
     /**
